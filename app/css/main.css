@@ -1,0 +1,57 @@
+body {
+  font-family: "Raleway", sans-serif; }
+
+.gallery {
+  overflow-y: scroll;
+  max-height: 500px;
+  max-width: 1024px; }
+
+.entry {
+  clear: left;
+  padding: 0.5em;
+  border-bottom: 1px solid #ddd; }
+  .entry .picture {
+    display: block;
+    background: #ddd;
+    text-align: center; }
+  .entry .info {
+    display: block; }
+    .entry .info h2 {
+      margin-top: 0.5em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .entry .info .details {
+      padding-left: 0.5em; }
+  .entry img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto; }
+  .entry .links {
+    display: block;
+    margin-top: 1em; }
+    .entry .links a {
+      margin-right: 1em; }
+  .entry .plusone {
+    margin: 1em 0; }
+
+@media (min-width: 400px) {
+  .entry .picture {
+    display: inline-block;
+    max-width: 240px;
+    width: 20%; }
+  .entry .info {
+    display: inline-block;
+    max-width: 75%;
+    vertical-align: top; }
+    .entry .info h2 {
+      margin-top: 0; } }
+
+@media (min-width: 800px) {
+  .entry .details span {
+    padding-right: 1em; }
+  .entry .links {
+    display: inline;
+    margin: 0; }
+  .entry .link-author {
+    float: left; } }
